@@ -48,13 +48,46 @@ elif int(ch)==6:
 	\tPress 3 : To write on the file
 	\tPress 4 : To display the content in file
 	\tPress 5 : To delete the file""")
-	Create_file=input()
+	
+	Press=input()
+	if int(Press)==1:
+		print("Enter File name : ",end=' ')
+		File_name=input()
+		os.system("mkdir {}".format(File_name));
+		print("\n\n");
+		os.system("ls");
+	elif int(Press)==2:
+		print("Enter File name : ",end=' ')
+		File_name=input()
+		os.system("mkdir {}".format(File_name));
+		print("\n\n");
+		os.system("ls");
+	elif int(Press)==3:
+		print("Enter File name : ",end=' ')
+		File_name=input()
+		os.system("gedit {}".format(File_name));
+	elif int(Press)==4:
+		print("Enter File name : ",end=' ')
+		File_name=input()
+		os.system("cat {}".format(File_name));
+	elif int(Press)==5:
+		print("Enter File name : ",end=' ')
+		File_name=input()
+		print("Deleting file .........");
+		os.system("rm {}".format(File_name));
+		print("\n\n");
+		os.system("ls");
 	print("DONE")
 elif int(ch)==7:
-	os.system("exit")
+	print("still nothing written in this");
 elif int(ch)==8:
-	print("Rebooting the system")
-	#os.system("reboot")
+	os.system("exit")
+elif int(ch)==9:
+	print("Rebooting the system........")
+	os.system("reboot");
+elif int(ch)==10:
+	print("POWERING OFF........")
+	os.system("poweroff");
 else:
 	print("OOOOPPS!!!!!!!! Incorrect Choice")
 
