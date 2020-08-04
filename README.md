@@ -8,4 +8,4 @@
 <h2>Laguage Used :</h2>
 - Python 🥽 <br>
 <h2>Operating System :</h2>
-- RedHat 8 :laugh:
+- RedHat 8 :laughing:
